@@ -29,7 +29,7 @@ public class SQLInjectiontest {
 			System.out.println("Connection successful");
 			
 			Statement statement = conn.createStatement();
-			String query = "Select * FROM question WHERE question = '"+ question +"'";
+			String query = "Select * FROM questions WHERE question = '"+ question +"'";
 			System.out.println(query);
 			ResultSet result = statement.executeQuery(query);
 			
